@@ -1,6 +1,6 @@
 <?php
 $host = "localhost"; // atau "localhost"
-$dbname = "mahasiswa"; // atau "mahasiswa"
+$dbname = "web"; // atau "mahasiswa"
 $username = "web";
 $password = "tes123";
 
