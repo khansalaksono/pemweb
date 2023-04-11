@@ -5,6 +5,7 @@
 <table style="border-collapse: collapse; width:fit-content">
     <thead>
         <tr>
+            <th style="padding:10px; border:1px solid black;">id</th>
             <th style="padding:10px; border:1px solid black;">NIM</th>
             <th style="padding:10px; border:1px solid black;">Nama</th>
         </tr>
@@ -19,8 +20,11 @@
         $query = $db->query($sql);
         $rows = $query->fetchAll();
         foreach ($rows as $row) {
+            echo "<tr>";
+            echo "<td style='padding:10px; border:1px solid black'>{$row["id"]}";
             echo "<td style='padding:10px; border:1px solid black'>{$row["nim"]}";
             echo "<td style='padding:10px; border:1px solid black'>{$row["nama"]}";
+            echo "</tr>";
             //echo $row["nim"] . " " . $row["nama"] . "<br/>";
         }
 
