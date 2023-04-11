@@ -16,7 +16,7 @@ function login(){
     }
 
     //console.log(username+" "+password)
-    const url = "http://localhost:80/login_process.php"
+    const url = "http://localhost:80/pemweb/login_process.php"
     fetch(url, {
         method: "POST",
         headers: {
